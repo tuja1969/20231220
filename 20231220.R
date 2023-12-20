@@ -6,7 +6,11 @@ summary(Data)
 Color = "red"
 plot(Data, col = Color)
 
+Color = "red"          #指定顏色
 
+pdf("plot.pdf")      #開啟一個pdf file，路徑為"plot.pdf"
+plot(Data, col = Color) #將圖畫到開啟中的pdf file上去
+dev.off()            #關掉這個pdf file
 
 
 
